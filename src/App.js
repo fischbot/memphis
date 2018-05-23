@@ -7,33 +7,71 @@ class App extends Component {
     return (
       <div className="page">
         <header>
-          <h1 className="site-name">Memphis Live</h1>
-          <div className="search">
-            <input type="text" placeholder="search events" />
-            <button>Search</button>
-          </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <h1 className="site-name"><span>Memphis</span> Live</h1>
+            </div>
+            <div className="search col-6 offset-3 col-md-3 offset-md-3">
+              <form>
+                <input class="form-control" type="search" placeholder="search events" />
+              </form>
+            </div>
+          </div>{/* end row */}
         </header>
-        <main>
-          <section className="video">
-            <iframe width={854/2} height={480/2} src="https://www.youtube.com/embed/1nqTnMweTPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </section>
 
-          <section className="events">
-
-          </section>
-
-          <section className="newsletter-signup">
-              <div className="newsletter-form">
-                <p>Sign up to be notified of upcoming events</p>
-                <input type="text" placeholder="email address" />
-                <button>JOIN</button>
+        <main className="container">
+            <section className="video row">
+              <div className="col">
+                <div className="embed-responsive embed-responsive-16by9">
+                  <iframe className="embed-responsive-item"
+                    src="https://www.youtube.com/embed/1nqTnMweTPE"
+                    allowFullScreen>
+                  </iframe>
+                </div>
               </div>
-          </section>
+            </section>
+
+            <section className="events">
+              <h2>Upcoming Events</h2>
+              <div className="row">
+                <div className="col"></div>
+                <div className="col"></div>
+                <div className="col"></div>
+              </div>
+            </section>
+
+            <section className="newsletter-signup row">
+                <div className="newsletter-contents col-12 col-sm-8 offset-sm-2">
+                  <p>Sign up to be notified of upcoming events</p>
+                  <form>
+                    <input className="form-control" type="text" placeholder="email address" />
+                    <button type="submit" className="btn">JOIN</button>
+                  </form>
+                </div>
+            </section>
         </main>
         <footer>
-          <div className="footer-content">
-            <img src={logo} alt="Thriving Cities Logo"/>
-            <p>Copyright &copy; 2018 Thriving Cities</p>
+          <div className="footer-content row">
+            <div className="col">
+              <ul>
+                <li><a href="">Amet Pellentesque</a></li>
+                <li><a href="">Commodo</a></li>
+                <li><a href="">Cursus Ultricies</a></li>
+                <li><a href="">Bibendum Pellentesque Fermentum</a></li>
+              </ul>
+            </div>
+            <div className="col">
+              <img src={logo} alt="Thriving Cities Logo"/>
+              <p className="copyright">Copyright &copy; 2018 Thriving Cities</p>
+            </div>
+            <div className="col">
+              <ul>
+                <li><a href="">Fusce</a></li>
+                <li><a href="">Vehicula</a></li>
+                <li><a href="">Cursus Ultricies</a></li>
+                <li><a href="">Bibendum Pellentesque Fermentum</a></li>
+              </ul>
+            </div>
           </div>
         </footer>
       </div>

@@ -1,9 +1,13 @@
 .page {
   font-family: Abel, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
   color: white;
-  position: relative;
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 1200px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-name,
@@ -11,30 +15,120 @@
   font-family: Condiment, sans-serif;
 }
 
+section {
+  margin: 60px 0;
+}
 /* ==================== HEADER ========================== */
+.site-name {
+  font-size: 3em;
+  padding: 20px 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: #D0D0D0;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
+.site-name span {
+  color: #E3A820;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
+.search form {
+  align-self: center;
+}
+
+.search input {
+  height: 30px;
+  align-self: center;
+  border-radius: 15px;
+  background: #EDEFF5;
+  border: 1px solid #686868;
+}
 
 /* ===================== MAIN =========================== */
-.newsletter-form {
-  background: rgba(0,0,0,0.7);
-  display: inline-block;
-  padding: 0 30px 30px;
+main {
+  flex: 1;
+}
+
+/* ==== Events ==== */
+.events h2 {
   text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2em;
 }
 
-.newsletter-form input {
-  width: 80%;
+/* ==== Newsletter ==== */
+.newsletter-contents {
+  background: rgba(0,0,0,0.6);
+  padding: 20px 20px 40px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.newsletter-contents p {
+  font-size: 1.3em;
+  color: #C1C4CD;
 }
 
+.newsletter-contents form * {
+  border: none;
+  border-radius: 0;
+}
+
+.newsletter-contents form {
+  display: flex;
+  padding: 0 20px;
+}
+
+.newsletter-contents .btn {
+  background: #E3A820;
+  color: white;
+}
 /* ==================== FOOTER ========================== */
 footer {
   text-align: center;
-  position: fixed;
-  bottom: 0;
+  padding: 10px 0;
 }
 
-/* TODO center footer content */
+.copyright {
+  font-size: 0.6em;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.footer-content ul {
+  padding: 0;
+}
+
+.footer-content li {
+  list-style: none;
+  font-size: 0.78em;
+}
+
+.footer-content a {
+  color: white;
+}
 
 footer img {
-  max-width: 60px;
+  max-width: 50px;
   height: auto;
+}
+
+/* Tablet & Desktop Media Queries */
+@media (min-width: 576px) {
+  .site-name {
+    text-align: left;
+    font-size: 4em;
+  }
+
+  .events h2 {
+    font-size: 2.6em;
+  }
 }

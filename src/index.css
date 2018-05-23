@@ -6,6 +6,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(./assets/img/bg.jpg) top center no-repeat;
+  background: url(./assets/img/bg.jpg) top center no-repeat; /* Photo by PJ Szabo on Unsplash */
   background-size: cover;
 }
