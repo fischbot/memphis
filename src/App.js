@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './assets/img/logo.png';
+import sampleEvent1 from './assets/img/sample-event1.png';
 
 class App extends Component {
   render() {
     return (
-      <div className="page">
+      <div className="page">{/* container for all site contents*/}
         <header>
           <div className="row">
             <div className="col-sm-12 col-md-6">
@@ -34,9 +35,30 @@ class App extends Component {
             <section className="events">
               <h2>Upcoming Events</h2>
               <div className="row">
-                <div className="col"></div>
-                <div className="col"></div>
-                <div className="col"></div>
+                <div className="col-10 offset-1 col-sm-6 col-md-4">
+                  <div className="event">
+                    <h3 className="event-title">Event Title</h3>
+                    <img className="event-img fluid-img" src={sampleEvent1} alt="Sample Event"/>
+                    <p className="event-date">June 2</p>
+                    <button type="submit" className="event-signup-btn btn">Sign Up</button>
+                  </div>
+                </div>
+                <div className="col-10 offset-1 col-sm-6 col-md-4">
+                  <div className="event">
+                    <h3 className="event-title">Event Title</h3>
+                    <img className="event-img fluid-img" src={sampleEvent1} alt="Sample Event"/>
+                    <p className="event-date">June 2</p>
+                    <button type="submit" className="event-signup-btn btn">Sign Up</button>
+                  </div>
+                </div>
+                <div className="col-10 offset-1 col-sm-6 col-md-4">
+                  <div className="event">
+                    <h3 className="event-title">Event Title</h3>
+                    <img className="event-img fluid-img" src={sampleEvent1} alt="Sample Event"/>
+                    <p className="event-date">June 2</p>
+                    <button type="submit" className="event-signup-btn btn">Sign Up</button>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -68,8 +90,6 @@ class App extends Component {
               <ul>
                 <li><a href="">Fusce</a></li>
                 <li><a href="">Vehicula</a></li>
-                <li><a href="">Cursus Ultricies</a></li>
-                <li><a href="">Bibendum Pellentesque Fermentum</a></li>
               </ul>
             </div>
           </div>

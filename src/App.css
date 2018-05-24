@@ -1,13 +1,13 @@
 .page {
-  font-family: Abel, sans-serif;
-  color: white;
-  margin: 0 auto;
-  padding: 0 2%;
   max-width: 1200px;
   width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 0 2%;
+  font-family: Abel, sans-serif;
+  color: white;
 }
 
 .site-name,
@@ -60,8 +60,49 @@ main {
   background: rgba(0,0,0,0.6);
   padding: 10px 0;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 2em;
+}
+
+.events {
+}
+.event {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  margin: 20px 0;
+}
+
+.event-title {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.event-img {
+  width: 100%;
+  height: auto;
+}
+
+.event-date {
+  font-size: 2.4em;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.event-signup-btn {
+  width: 100%;
+  border-radius: 0;
+}
+
+.event-signup-btn,
+.newsletter-contents .btn
+ {
+  background: #E3A820;
+  color: white;
+}
+
+.event-signup-btn:hover,
+.newsletter-contents .btn:hover {
+  background: #BE881D;
 }
 
 /* ==== Newsletter ==== */
@@ -87,10 +128,6 @@ main {
   padding: 0 20px;
 }
 
-.newsletter-contents .btn {
-  background: #E3A820;
-  color: white;
-}
 /* ==================== FOOTER ========================== */
 footer {
   text-align: center;
