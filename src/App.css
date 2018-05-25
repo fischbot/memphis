@@ -54,6 +54,11 @@ main {
   flex: 1;
 }
 
+.video {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* ==== Events ==== */
 .events h2 {
   text-align: center;
