@@ -15,12 +15,15 @@ class Main extends Component {
             </div>
           </section>
 
-          <section className="events">
-            <h2>Upcoming Events</h2>
-            <div className="row">
-              {/* <EventList events={events} /> */}
-            </div>
-          </section>
+        <section className="events">
+          <div className="col">
+            <SearchBox searchChange={this.onSearchChange}/>
+          </div>
+          <h2>Upcoming Events</h2>
+          <div className="row">
+            <EventList events={filteredEvents} />
+          </div>
+        </section>
 
           <section className="newsletter-signup row">
               <div className="newsletter-contents col-12 col-sm-8 offset-sm-2">
