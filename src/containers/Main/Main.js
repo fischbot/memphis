@@ -22,7 +22,7 @@ const Main = ({ filteredEvents }) => {
               <SearchBox searchChange={this.onSearchChange}/>
             </div>
           </div>
-          <h2>Upcoming Events</h2>
+          <h2 className="section-heading">Upcoming Events</h2>
           <div className="row">
             <EventList events={filteredEvents} />
           </div>
