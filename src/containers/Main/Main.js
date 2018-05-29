@@ -17,8 +17,10 @@ const Main = ({ filteredEvents }) => {
         </section>
 
         <section className="events">
-          <div className="col">
-            <SearchBox searchChange={this.onSearchChange}/>
+          <div className="row">
+            <div className="col">
+              <SearchBox searchChange={this.onSearchChange}/>
+            </div>
           </div>
           <h2>Upcoming Events</h2>
           <div className="row">
@@ -26,7 +28,8 @@ const Main = ({ filteredEvents }) => {
           </div>
         </section>
 
-        <section className="newsletter-signup row">
+        <section className="newsletter-signup">
+          <div className="row">
             <div className="newsletter-contents col-12 col-sm-8 offset-sm-2">
               <p>Get notified of upcoming events</p>
               <form>
@@ -34,6 +37,7 @@ const Main = ({ filteredEvents }) => {
                 <button type="submit" className="btn">JOIN</button>
               </form>
             </div>
+          </div>
         </section>
     </main>
   );
