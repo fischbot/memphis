@@ -1,6 +1,7 @@
 import React from 'react';
 import EventList from '../../components/EventList';
 import SearchBox from '../../components/SearchBox';
+import NewsletterForm from '../../components/NewsletterForm';
 
 const Main = ({ filteredEvents }) => {
   return(
