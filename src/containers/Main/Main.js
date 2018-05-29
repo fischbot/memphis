@@ -57,9 +57,7 @@ const Main = ({ filteredEvents }) => {
             </div>
           </div>
           <h2 className="section-heading">Upcoming Events</h2>
-          <div className="row">
-            <EventList events={filteredEvents} />
-          </div>
+          <EventList events={filteredEvents} />
         </section>
 
         <section className="newsletter-signup">
