@@ -75,8 +75,10 @@ main {
   font-size: 2em;
 }
 
-.events {
+.featured-events .section-heading {
+  margin-bottom: 30px;
 }
+
 .event {
   text-align: center;
   background: rgba(0,0,0,0.6);
