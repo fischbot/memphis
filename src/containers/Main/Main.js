@@ -50,7 +50,7 @@ const Main = ({ filteredEvents }) => {
           </div>
         </section>
 
-        <section className="events">
+        <section className="events" id="event-list">
           <div className="row">
             <div className="col">
               <SearchBox searchChange={this.onSearchChange}/>
