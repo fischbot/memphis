@@ -16,7 +16,7 @@ class Footer extends Component {
           </div>
           <div className="col">
             <img src={logo} alt="Thriving Cities Logo"/>
-            <p className="copyright">Copyright &copy; 2018 Thriving Cities</p>
+            <p className="copyright">&copy; 2018 Thriving Cities</p>
           </div>
           <div className="col">
             <ul>
