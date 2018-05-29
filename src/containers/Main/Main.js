@@ -1,6 +1,6 @@
 import React from 'react';
-import EventList from './EventList';
-import SearchBox from './SearchBox';
+import EventList from '../../components/EventList';
+import SearchBox from '../../components/SearchBox';
 
 const Main = ({ filteredEvents }) => {
   return(

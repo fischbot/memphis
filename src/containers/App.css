@@ -38,12 +38,12 @@ section {
 }
 
 .search form {
-  align-self: center;
+  /* align-self: center; */
 }
 
 .search input {
   height: 30px;
-  align-self: center;
+  /* align-self: center; */
   border-radius: 15px;
   background: #EDEFF5;
   border: 1px solid #686868;
