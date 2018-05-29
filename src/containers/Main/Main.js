@@ -19,7 +19,7 @@ const Main = ({ filteredEvents }) => {
         <section className="featured-events">
           <h2 className="section-heading">Featured Events</h2>
           <div className="row">
-            <div className="col-lg-10 offset-lg-1">
+            <div className="col-12">
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
