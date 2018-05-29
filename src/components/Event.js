@@ -1,11 +1,23 @@
 import React from 'react';
 
-const Event = ({ title, img, date}) => {
+const Event = ({ title, img, date, time, location, about }) => {
   return (
     <div className="event col-12 col-md-5">
       <h3 className="event-title">{title}</h3>
       <img className="event-img fluid-img" src={require(`../assets/img/${img}`)} alt="Sample Event"/>
-      <p className="event-date">{date}</p>
+      <div className="event-info">
+        <div className="event-time-loc row">
+          <div className="col-6">
+            <p className="event-time">{time}</p>
+          </div>
+          <div className="col-6">
+            <p className="event-location">{location}</p>
+          </div>
+        </div>
+
+        <p className="event-about">{about}</p>
+        <h4 className="event-date">{date}</h4>
+      </div>
       <button type="submit" className="event-signup-btn btn">Sign Up</button>
     </div>
   );

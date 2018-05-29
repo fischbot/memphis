@@ -89,6 +89,7 @@ main {
   padding: 0;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .event-title {
@@ -101,6 +102,23 @@ main {
   width: 100%;
   height: auto;
   flex: 1;
+}
+
+.event-info {
+  padding: 10px 0;
+}
+
+.event-info p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.event-time-loc {
+  color: #E3A820;
+}
+
+.event-about {
+  padding: 10px 5px;
 }
 
 .event-date {
