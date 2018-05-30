@@ -32,13 +32,8 @@ section {
   color: #E3A820;
 }
 
-.search {
-  display: flex;
-  flex-direction: row;
 }
 
-.search form {
-  /* align-self: center; */
 }
 
 .search input {
@@ -149,26 +144,25 @@ hr {
   color: #C1C4CD;
 }
 
-/* .newsletter-contents form * {
-  border: none;
+.newsletter-form input {
   border-radius: 0;
-} */
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
+  border: none;
 }
 
 .newsletter-form button {
   background: #E3A820;
   color: white;
-    border: none;
+  border: none;
 }
 
 .newsletter-form .msg-alert {
-  color: #E3A820;
+  display: block !important;
 }
+
+.newsletter-form .msg-alert p {
+  color: #E3A820 !important;
+}
+
 /* ==================== FOOTER ========================== */
 footer {
   text-align: center;
