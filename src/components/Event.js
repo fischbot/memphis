@@ -16,6 +16,7 @@ const Event = ({ title, img, date, time, location, about }) => {
         </div>
 
         <p className="event-about">{about}</p>
+        <hr />
         <h4 className="event-date">{date}</h4>
       </div>
       <button type="submit" className="event-signup-btn btn">Sign Up</button>

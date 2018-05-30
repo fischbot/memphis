@@ -109,6 +109,10 @@ section {
 
 .event-about {
   padding: 10px 5px;
+
+hr {
+  background: #E3A820;;
+  margin: 0 10px;
 }
 
 .event-date {
