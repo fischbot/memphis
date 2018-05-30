@@ -7,6 +7,8 @@ import Carousel from '../../components/Carousel';
 const Main = ({ filteredEvents }) => {
   return(
     <main className="container">
+
+        {/* ================ VIDEO PLAYER  ===============================*/}
         <section className="video row">
           <div className="col">
             <div className="embed-responsive embed-responsive-16by9">
@@ -18,6 +20,7 @@ const Main = ({ filteredEvents }) => {
           </div>
         </section>
 
+        {/* ================ FEATURED EVENTS ===============================*/}
         <section className="featured-events">
           <h2 className="section-heading">Featured Events</h2>
           <div className="row">
@@ -27,16 +30,18 @@ const Main = ({ filteredEvents }) => {
           </div>
         </section>
 
+        {/* ================ EVENTS LIST ==================================*/}
         <section className="events" id="event-list">
+          <h2 className="section-heading">Upcoming Events</h2>
           <div className="row">
             <div className="col">
               <SearchBox searchChange={this.onSearchChange}/>
             </div>
           </div>
-          <h2 className="section-heading">Upcoming Events</h2>
           <EventList events={filteredEvents} />
         </section>
 
+        {/* ================ NEWSLETTER SIGN UP ============================*/}
         <section className="newsletter-signup">
           <div className="row">
             <div className="newsletter-contents col-12 col-sm-8 offset-sm-2">
