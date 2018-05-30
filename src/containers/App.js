@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className="page">{/* container for all site contents*/}
         <Header /> {/* site name/logo */}
-        <Main filteredEvents={filteredEvents} /> {/* all main site content: video embed, event search, event list, newsletter sign up */}
+        <Main filteredEvents={filteredEvents} onSearchChange={this.onSearchChange} /> {/* all main site content: video embed, event search, event list, newsletter sign up */}
         <Footer /> {/* links (ex. about, contact, external, etc), company logo, copyright */}
       </div>
     );
