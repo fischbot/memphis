@@ -41,10 +41,7 @@ const Main = ({ filteredEvents }) => {
           <div className="row">
             <div className="newsletter-contents col-12 col-sm-8 offset-sm-2">
               <p>Get notified of upcoming events</p>
-              <form>
-                <input className="form-control" type="text" placeholder="email address" />
-                <button type="submit" className="btn">JOIN</button>
-              </form>
+              <NewsletterForm />
             </div>
           </div>
         </section>
