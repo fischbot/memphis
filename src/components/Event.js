@@ -19,7 +19,10 @@ const Event = ({ name, img, date, time, location, about }) => {
         <hr />
         <h4 className="event-date">{date}</h4>
       </div>
-      <button type="submit" className="event-signup-btn btn">Sign Up</button>
+      <button onClick={ clickHandler }
+              type="submit"
+              className="event-signup-btn btn">Sign Up
+      </button>
     </div>
   );
 };
