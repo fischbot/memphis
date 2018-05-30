@@ -3,16 +3,22 @@ import './App.css';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
-import { events } from '../assets/events';
+import JSON from '../assets/events.json'; // event info
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      events : events,
-      searchField : ""
-    };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     events : events,
+  //     searchField : ""
+  //   };
+  // }
+
+  state = {
+    events : JSON,
+    searchField : ""
+  };
+
   onSearchChange = (event) => {
     this.setState({ searchField : event.target.value });
   }
