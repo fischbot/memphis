@@ -4,7 +4,7 @@ import SearchBox from '../../components/SearchBox';
 import NewsletterForm from '../../components/NewsletterForm';
 import Carousel from '../../components/Carousel';
 
-const Main = ({ filteredEvents }) => {
+const Main = ({ filteredEvents, onSearchChange }) => {
   return(
     <main className="container">
 
@@ -35,7 +35,7 @@ const Main = ({ filteredEvents }) => {
           <h2 className="section-heading">Upcoming Events</h2>
           <div className="row">
             <div className="col">
-              <SearchBox searchChange={this.onSearchChange}/>
+              <SearchBox onSearchChange={onSearchChange}/>
             </div>
           </div>
           <EventList events={filteredEvents} />

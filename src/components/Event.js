@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Event = ({ title, img, date, time, location, about }) => {
+const Event = ({ name, img, date, time, location, about }) => {
   return (
     <div className="event col-12 col-md-5">
-      <h3 className="event-title">{title}</h3>
+      <h3 className="event-name">{name}</h3>
       <img className="event-img fluid-img" src={require(`../assets/img/${img}`)} alt="Sample Event"/>
       <div className="event-info">
         <div className="event-time-loc row">
@@ -19,7 +19,10 @@ const Event = ({ title, img, date, time, location, about }) => {
         <hr />
         <h4 className="event-date">{date}</h4>
       </div>
-      <button type="submit" className="event-signup-btn btn">Sign Up</button>
+      <button onClick={ clickHandler }
+              type="submit"
+              className="event-signup-btn btn">Sign Up
+      </button>
     </div>
   );
 };

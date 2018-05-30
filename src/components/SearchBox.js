@@ -1,13 +1,13 @@
 import React from 'react';
 
-const SearchBox = ({ searchField, searchChange }) => {
+const SearchBox = ({ searchField, onSearchChange }) => {
   return (
     <div className="search">
       <input
         className="form-control"
         type="search"
         placeholder="search upcoming events"
-        onChange={searchChange}
+        onChange={(searchField) => onSearchChange(searchField)}
       />
     </div>
   );

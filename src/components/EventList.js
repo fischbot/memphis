@@ -10,7 +10,7 @@ const EventList = ({ events }) => {
             <Event
               key={event.id}
               id={event.id}
-              title={event.title}
+              name={event.name}
               date={event.date}
               img={event.img}
               time={event.time}
