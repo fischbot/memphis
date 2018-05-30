@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Event name",
+    "name": "Jazz Concert",
     "date": "June 2",
     "time": "7pm - 11pm",
     "location": "123 Main St",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Magna",
+    "name": "Concert",
     "date": "June 4",
     "time": "6pm",
     "location": "456 Main St",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Bibendum Sit Ipsum",
+    "name": "Tech Meetup",
     "date": "June 9",
     "time": "1pm - 5pm",
     "location": "789 Main St",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "Parturient",
+    "name": "Skateland",
     "date": "June 12",
     "time": "7pm - 11pm",
     "location": "123 Main St",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "name": "Condimentum",
+    "name": "Rock Concert",
     "date": "June 14",
     "time": "6pm",
     "location": "456 Main St",
@@ -45,7 +45,7 @@
   },
   {
     "id": 6,
-    "name": "Condimentum",
+    "name": "Cookout",
     "date": "June 17",
     "time": "1pm - 5pm",
     "location": "789 Main St",
