@@ -6,7 +6,7 @@ const SearchBox = ({ searchField, searchChange }) => {
       <input
         className="form-control"
         type="search"
-        placeholder="search events"
+        placeholder="search upcoming events"
         onChange={searchChange}
       />
     </div>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
-import { events } from './events';
+import Header from './Header/Header';
+import Main from './Main/Main';
+import Footer from './Footer/Footer';
+import { events } from '../assets/events';
 
 class App extends Component {
   constructor() {

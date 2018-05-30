@@ -3,7 +3,7 @@ import Event from './Event';
 
 const EventList = ({ events }) => {
   return (
-    <div className="col-10 offset-1 col-sm-6 col-md-4">
+    <div className="row">
       {
         events.map((event) => {
           return (
