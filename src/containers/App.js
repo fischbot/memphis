@@ -6,14 +6,6 @@ import Footer from './Footer/Footer';
 import JSON from '../assets/events.json'; // event info
 
 class App extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     events : events,
-  //     searchField : ""
-  //   };
-  // }
-
   state = {
     events : JSON,
     searchField : ""
