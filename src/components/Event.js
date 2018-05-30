@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Event = ({ title, img, date, time, location, about }) => {
+const Event = ({ name, img, date, time, location, about }) => {
   return (
     <div className="event col-12 col-md-5">
-      <h3 className="event-title">{title}</h3>
+      <h3 className="event-name">{name}</h3>
       <img className="event-img fluid-img" src={require(`../assets/img/${img}`)} alt="Sample Event"/>
       <div className="event-info">
         <div className="event-time-loc row">

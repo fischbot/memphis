@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     {/* array of events from user search by event title */}
     const filteredEvents = this.state.events.filter(event => {
-      return event.title.toLowerCase().includes(this.state.searchField.toLowerCase());
+      return event.name.toLowerCase().includes(this.state.searchField.toLowerCase());
     });
 
     return (
