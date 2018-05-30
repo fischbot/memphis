@@ -36,12 +36,12 @@ section {
 
 }
 
+/* ==== Events ==== */
 .search input {
-  height: 30px;
-  /* align-self: center; */
-  border-radius: 15px;
+  width: 98%;
+  margin: 30px auto 0;
+  border-radius: 0;
   background: #EDEFF5;
-  border: 1px solid #686868;
 }
 
 .search input:focus,
