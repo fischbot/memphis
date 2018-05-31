@@ -1,4 +1,5 @@
 import React from 'react';
+import EventForm from './EventForm';
 
 const Event = ({ name, img, date, time, location, about }) => {
   return (
@@ -38,11 +39,10 @@ const Event = ({ name, img, date, time, location, about }) => {
               </button>
             </div>
             <div class="modal-body">
-              Sign Up Form Goes Here
+              <EventForm />
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              {/* <button type="button" class="btn btn-primary">Submit</button> */}
             </div>
           </div>
         </div>
