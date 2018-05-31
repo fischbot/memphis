@@ -10,7 +10,7 @@ class EventForm extends Component {
         fields={[
           {
             name: 'NAME',
-            placeholder: 'NAME',
+            placeholder: 'Name',
             type: 'text',
             required: true
           },
