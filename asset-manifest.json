@@ -1,0 +1,12 @@
+{
+  "main.css": "static/css/main.05c0b468.css",
+  "main.css.map": "static/css/main.05c0b468.css.map",
+  "main.js": "static/js/main.d7a99210.js",
+  "main.js.map": "static/js/main.d7a99210.js.map",
+  "static/media/sample-event1.png": "static/media/sample-event1.c2ccd13f.png",
+  "static/media/sample-event2.png": "static/media/sample-event2.ab5f2eae.png",
+  "static/media/sample-event3.png?auto=yes&bg=555&fg=333&text=Event 3": "static/media/sample-event3.08621c73.png",
+  "static/media/sample-event4.jpeg?auto=yes&bg=777&fg=555&text=Event 1": "static/media/sample-event4.ffc3355e.jpeg",
+  "static/media/sample-event5.jpeg?auto=yes&bg=666&fg=444&text=Event 2": "static/media/sample-event5.e25f75f4.jpeg",
+  "static/media/sample-event6.jpeg": "static/media/sample-event6.c1a403c5.jpeg"
+}
