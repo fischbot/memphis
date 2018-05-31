@@ -210,6 +210,11 @@ hr {
   color: #C1C4CD;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
 .newsletter-form input {
   border-radius: 0;
   border: none;
