@@ -19,6 +19,7 @@ const Main = ({ filteredEvents, onSearchChange }) => {
         <section className="video row">
           <div className="col">
             <div className="embed-responsive embed-responsive-16by9">
+              {/* Replace iframe src url with your video URL */}
               <iframe className="embed-responsive-item"
                 src="https://www.youtube.com/embed/1nqTnMweTPE"
                 allowFullScreen>
