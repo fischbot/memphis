@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
-// import the component
 import Mailchimp from 'react-mailchimp-form'
 
-class NewsletterForm extends Component {
+
+/*
+  Uses react-mailchimp-form to set up the form information.
+  Instructions for use can be found at https://www.npmjs.com/package/react-mailchimp-form
+*/
+
+class EventForm extends Component {
   render() {
     return (
         <Mailchimp
-        action='https://coolwebsite.us18.list-manage.com/subscribe/post?u=a725bf8b85623951c4a8d98d3&amp;id=9e0d915541'
+        action='https://coolwebsite.us18.list-manage.com/subscribe/post?u=a725bf8b85623951c4a8d98d3&amp;id=5bf8e6f8e6'
         fields={[
+          {
+            name: 'NAME',
+            placeholder: 'Name',
+            type: 'text',
+            required: true
+          },
           {
             name: 'EMAIL',
             placeholder: 'Email',
             type: 'email',
+            required: true
+          },
+          {
+            name: 'EVENT',
+            placeholder: 'Event You Want To Attend',
+            type: 'text',
             required: true
           }
         ]}
@@ -27,10 +44,10 @@ class NewsletterForm extends Component {
           }
         }
         // Add a personalized class
-        className='newsletter-form'
+        className='event-signup-form'
         />
     );
   }
 }
 
-export default NewsletterForm;
+export default EventForm;

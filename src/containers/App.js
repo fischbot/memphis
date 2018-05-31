@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header/Header';
-import Main from './Main/Main';
-import Footer from './Footer/Footer';
-import JSON from '../assets/events.json'; // event info
+
+/* Layout Components */
+import Header from '../components/Layout/Header/Header';
+import Main from '../components/Layout/Main/Main';
+import Footer from '../components/Layout/Footer/Footer';
+
+/* Event Info */
+import JSON from '../assets/events.json';
 
 class App extends Component {
   state = {
