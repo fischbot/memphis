@@ -19,10 +19,34 @@ const Event = ({ name, img, date, time, location, about }) => {
         <hr />
         <h4 className="event-date">{date}</h4>
       </div>
-      <button onClick={ clickHandler }
-              type="submit"
-              className="event-signup-btn btn">Sign Up
+      <button type="submit"
+              className="event-signup-btn btn {id}"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              >
+        Sign Up
       </button>
+
+      {/* ======= EVENT SIGN UP MODAL ======= */}
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign up for {name}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Sign Up Form Goes Here
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              {/* <button type="button" class="btn btn-primary">Submit</button> */}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
