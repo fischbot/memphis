@@ -3,6 +3,7 @@ import EventList from '../../components/EventList';
 import SearchBox from '../../components/SearchBox';
 import NewsletterForm from '../../components/NewsletterForm';
 import Carousel from '../../components/Carousel';
+import Scroll from '../../components/Scroll';
 
 const Main = ({ filteredEvents, onSearchChange }) => {
   return(
@@ -38,7 +39,9 @@ const Main = ({ filteredEvents, onSearchChange }) => {
               <SearchBox onSearchChange={onSearchChange}/>
             </div>
           </div>
-          <EventList events={filteredEvents} />
+          <Scroll>
+            <EventList events={filteredEvents} />
+          </Scroll>
         </section>
 
         {/* ================ NEWSLETTER SIGN UP ============================*/}
