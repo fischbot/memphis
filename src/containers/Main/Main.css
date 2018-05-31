@@ -1,0 +1,198 @@
+main {
+  flex: 1;
+}
+
+/* ========== VIDEO SECTION =============== */
+.video {
+  margin: 0 auto;
+}
+
+/* ======== FEATURED EVENTS SECTION ========= */
+/*
+  Styles for Bootstrap carousel go here if needed
+*/
+
+/* ========== EVENTS SECTION =============== */
+.events {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.events .row {
+  justify-content: space-around;
+  margin: 0;
+}
+.event {
+  max-width:96%;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  margin: 40px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.8);
+}
+
+.event:hover {
+  box-shadow: 0px 0px 5px rgba(190,136,29, 0.4);
+}
+
+.event-name {
+  padding: 15px 5px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.event-img {
+  width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.event-info {
+  padding: 10px 0 0;
+}
+
+.event-info p {
+  margin: 0;
+}
+
+.event-time-loc {
+  color: #E3A820;
+  font-size: 1.4em;
+}
+
+.event-about {
+  padding: 10px;
+  text-align: left;
+}
+
+.event-about {
+  padding: 10px;
+  text-align: left;
+}
+
+hr {
+  background: #E3A820;;
+  margin: 0 10px;
+}
+
+.event-date {
+  font-size: 2.4em;
+  margin: 0;
+  padding: 20px 0 0;
+  font-family: Condiment, sans-serif;
+}
+
+.event-signup-btn {
+  width: 100%;
+  border-radius: 0;
+}
+
+.event-signup-btn {
+  background: #E3A820;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.event-signup-btn:hover {
+  background: #BE881D;
+}
+
+/* ==== Pop Up Modal For Event Sign Up ==== */
+.modal {
+  color: #222;
+}
+
+.modal .btn-primary {
+  background: #E3A820;
+  border: 1px solid #E3A820;
+}
+
+.modal .btn-primary:hover {
+  background: #BE881D;
+}
+
+.modal-footer .btn-secondary {
+  border-radius: 0;
+}
+
+/* ==== Event Sign Up Form ==== */
+.event-signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-signup-form * {
+  height: 40px;
+}
+
+.event-signup-form input {
+  padding-left: 5px;
+  margin: 5px 0;
+}
+
+.event-signup-form button {
+  color: white;
+  background: #E3A820;
+  border-color: #E3A820;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.event-signup-form button:hover {
+  background: #BE881D;
+}
+/* ======== NEWSLETTER SECTION ============= */
+.newsletter-contents {
+  background: rgba(0,0,0,0.6);
+  padding: 20px 20px 40px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.newsletter-contents p {
+  font-size: 1.3em;
+  color: #C1C4CD;
+}
+
+/* ==== Newsletter Form ==== */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  border-radius: 0;
+  border: none;
+}
+
+.newsletter-form input:focus {
+  outline: none !important;
+  border: 1px solid #E3A820;
+  box-shadow: 0 0 5px #EAE5D1;
+}
+
+.newsletter-form button {
+  background: #E3A820;
+  color: white;
+  border: none;
+}
+
+.newsletter-form button:hover {
+  background: #BE881D;
+}
+
+.newsletter-form .msg-alert {
+  display: block !important;
+}
+
+.newsletter-form .msg-alert p {
+  color: #E3A820 !important;
+}

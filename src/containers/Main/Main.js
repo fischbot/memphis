@@ -4,6 +4,7 @@ import SearchBox from '../../components/SearchBox';
 import NewsletterForm from '../../components/NewsletterForm';
 import Carousel from '../../components/Carousel';
 import Scroll from '../../components/Scroll';
+import './Main.css';
 
 const Main = ({ filteredEvents, onSearchChange }) => {
   return(
