@@ -1,5 +1,13 @@
 import React from 'react';
-import EventForm from './EventForm';
+import EventForm from '../containers/EventForm';
+
+/*
+  Display events in the event section of Main.
+  It pulls data from EventList for display
+  If the user clicks the "Sign Up" button it triggers a Bootstrap modal
+  which shows a event sign up form.
+  The sign up form uses Mailchimp and requires a user's name, email address, and the name of the event they wish to attend
+*/
 
 const Event = ({ name, img, date, time, location, about }) => {
   return (

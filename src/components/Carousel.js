@@ -1,5 +1,10 @@
 import React from 'react';
 
+/*
+  Returns a Bootstrap carousel to display Featured Events
+  Instructions can be found at https://getbootstrap.com/docs/4.1/components/carousel/
+*/
+
 const Carousel = () => {
   return (
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">

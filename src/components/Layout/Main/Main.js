@@ -1,15 +1,20 @@
 import React from 'react';
-import EventList from '../../components/EventList';
-import SearchBox from '../../components/SearchBox';
-import NewsletterForm from '../../components/NewsletterForm';
-import Carousel from '../../components/Carousel';
-import Scroll from '../../components/Scroll';
+
+/* components */
+import EventList from '../../EventList';
+import SearchBox from '../../SearchBox';
+import Scroll from '../../Scroll';
+import Carousel from '../../Carousel';
+
+/* containers */
+import NewsletterForm from '../../../containers/NewsletterForm';
+
+/* styles */
 import './Main.css';
 
 const Main = ({ filteredEvents, onSearchChange }) => {
   return(
     <main className="container">
-
         {/* ================ VIDEO PLAYER  ===============================*/}
         <section className="video row">
           <div className="col">
@@ -36,6 +41,7 @@ const Main = ({ filteredEvents, onSearchChange }) => {
         <section className="events" id="event-list">
           <h2 className="section-heading">Upcoming Events</h2>
           <div className="row">
+            {/* ============= Search Box Display ===================*/}
             <div className="col-12 col-sm-6">
               <SearchBox onSearchChange={onSearchChange}/>
             </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Event from './Event';
 
+/* Returns Event data to the Event component for display */
+
 const EventList = ({ events }) => {
   return (
     <div className="row">
