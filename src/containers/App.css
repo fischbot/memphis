@@ -232,6 +232,10 @@ hr {
   font-weight: bold;
 }
 
+.event-signup-form .msg-alert p {
+  color: #E3A820 !important;
+}
+
 .event-signup-btn:hover,
 .newsletter-form button:hover {
   background: #BE881D;
