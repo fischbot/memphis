@@ -1,0 +1,45 @@
+header {
+  margin-bottom: 40px;
+}
+
+.site-name {
+  padding: 20px 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: #D0D0D0;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+.site-name span {
+  color: #E3A820;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+header nav li {
+  text-align: center;
+}
+
+header nav a {
+  color:  #E3A820;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+header nav a:hover {
+  color: #D0D0D0;
+}
+
+@media (min-width: 736px) {
+  .site-name {
+    text-align: left;
+  }
+
+  header nav li {
+    text-align: right;
+    margin-right: 60px;
+  }
+}
