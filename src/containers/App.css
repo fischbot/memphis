@@ -120,8 +120,18 @@ main {
   font:14px Helvetica,Arial,sans-serif;
 }
 
+.events {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 .events .row {
   justify-content: space-around;
+  margin: 0;
 }
 .event {
   max-width:96%;
