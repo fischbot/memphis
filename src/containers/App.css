@@ -179,8 +179,38 @@ main {
   text-align: left;
 }
 
+.event-signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-signup-form * {
+  height: 40px;
+}
+
+.event-signup-form input {
+  padding-left: 5px;
+  margin: 5px 0;
+}
+
+.event-signup-form button {
+  color: white;
+  background: #E3A820;
+  border-color: #E3A820;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.event-signup-form button:hover {
+  background: #BE881D;
+}
+
+.modal-footer .btn-secondary {
+  border-radius: 0;
+}
+
 hr {
-  background: #E3A820;;
+  background: #E3A820;
   margin: 0 10px;
 }
 
