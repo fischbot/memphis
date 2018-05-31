@@ -234,36 +234,6 @@ hr {
   color: #E3A820 !important;
 }
 
-/* ==================== FOOTER ========================== */
-footer {
-  text-align: center;
-  padding: 10px 0;
-}
-
-.copyright {
-  font-size: 0.6em;
-  margin: 0;
-  padding-top: 10px;
-}
-
-.footer-content ul {
-  padding: 0;
-}
-
-.footer-content li {
-  list-style: none;
-  font-size: 0.78em;
-}
-
-.footer-content a {
-  color: white;
-}
-
-footer img {
-  max-width: 50px;
-  height: auto;
-}
-
 /* Tablet & Desktop Media Queries */
 @media (min-width: 576px) {
   .events h2 {
