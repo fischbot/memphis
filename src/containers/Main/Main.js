@@ -34,7 +34,7 @@ const Main = ({ filteredEvents, onSearchChange }) => {
         <section className="events" id="event-list">
           <h2 className="section-heading">Upcoming Events</h2>
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-sm-6">
               <SearchBox onSearchChange={onSearchChange}/>
             </div>
           </div>
