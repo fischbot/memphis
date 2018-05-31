@@ -266,11 +266,6 @@ footer img {
 
 /* Tablet & Desktop Media Queries */
 @media (min-width: 576px) {
-  .site-name {
-    text-align: left;
-    font-size: 4em;
-  }
-
   .events h2 {
     font-size: 2.6em;
   }

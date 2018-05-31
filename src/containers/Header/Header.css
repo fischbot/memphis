@@ -36,6 +36,7 @@ header nav a:hover {
 @media (min-width: 736px) {
   .site-name {
     text-align: left;
+    font-size: 4em;
   }
 
   header nav li {
