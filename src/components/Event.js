@@ -1,12 +1,11 @@
 import React from 'react';
-import EventForm from '../containers/EventForm';
+import EventForm from './EventForm';
 
 /*
   Display events in the event section of Main.
   It pulls data from EventList for display
   If the user clicks the "Sign Up" button it triggers a Bootstrap modal
   which shows a event sign up form.
-  The sign up form uses Mailchimp and requires a user's name, email address, and the name of the event they wish to attend
 */
 
 const Event = ({ name, img, date, time, location, about }) => {
@@ -37,20 +36,17 @@ const Event = ({ name, img, date, time, location, about }) => {
       </button>
 
       {/* ======= EVENT SIGN UP MODAL ======= */}
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Sign up</h5>
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <EventForm />
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

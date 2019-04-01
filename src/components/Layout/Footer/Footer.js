@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="footer-content row">
         <div className="col">
           <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Cursus Ultricies</a></li>
-            <li><a href="">Bibendum Pellentesque Fermentum</a></li>
+            <li><button>About Us</button></li>
+            <li><button>Contact</button></li>
+            <li><button>Cursus Ultricies</button></li>
+            <li><button>Bibendum Pellentesque Fermentum</button></li>
           </ul>
         </div>
         <div className="col">
@@ -20,8 +20,8 @@ const Footer = () => {
         </div>
         <div className="col">
           <ul>
-            <li><a href="">Fusce</a></li>
-            <li><a href="">Vehicula</a></li>
+            <li><button>Fusce</button></li>
+            <li><button>Vehicula</button></li>
           </ul>
         </div>
       </div>

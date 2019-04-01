@@ -6,9 +6,6 @@ import SearchBox from '../../SearchBox';
 import Scroll from '../../Scroll';
 import Carousel from '../../Carousel';
 
-/* containers */
-import NewsletterForm from '../../../containers/NewsletterForm';
-
 /* styles */
 import './Main.css';
 
@@ -20,7 +17,7 @@ const Main = ({ filteredEvents, onSearchChange }) => {
           <div className="col">
             <div className="embed-responsive embed-responsive-16by9">
               {/* Replace iframe src url with your video URL */}
-              <iframe className="embed-responsive-item"
+              <iframe title="featured-video" className="embed-responsive-item"
                 src="https://www.youtube.com/embed/1nqTnMweTPE"
                 allowFullScreen>
               </iframe>
@@ -57,7 +54,10 @@ const Main = ({ filteredEvents, onSearchChange }) => {
           <div className="row">
             <div className="newsletter-contents col-12 col-sm-8 offset-sm-2">
               <p>Get notified of upcoming events</p>
-              <NewsletterForm />
+            <form className="newsletter-form" onSubmit={(e) => {e.preventDefault();}}>
+                <input type="text" placeholder="your@email.com" />
+                <button>Send</button>
+              </form>
             </div>
           </div>
         </section>

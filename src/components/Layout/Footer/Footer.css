@@ -18,8 +18,15 @@ footer {
   font-size: 0.78em;
 }
 
-.footer-content a {
+.footer-content button {
   color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.footer-content button:hover {
+  color: #E3A820;
 }
 
 footer img {
